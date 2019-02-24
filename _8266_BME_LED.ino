@@ -5,12 +5,12 @@
 #include <Adafruit_MQTT_Client.h>
 #include <ESP8266WiFi.h>
 //Adafruit io 
-#define WLAN_SSID       "RogersA0068"
-#define WLAN_PASS       "7EAB7Rogers"
+#define WLAN_SSID       ""
+#define WLAN_PASS       ""
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "740470158"
-#define AIO_KEY         "e3d40393f38c42bcaaf065b3cc79f4a2"
+#define AIO_USERNAME    ""
+#define AIO_KEY         ""
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_USERNAME, AIO_KEY);
 Adafruit_MQTT_Publish temperature = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME "/feeds/temperature");
